@@ -1,0 +1,38 @@
+@use "sass:map";
+@import "theme";
+
+:root {
+    width: 100%;
+}
+
+header {
+    padding: 1rem;
+    color: map.get($accent, 500);
+    width: 100%;
+    background-color: map.get($primary, 500);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    min-width: 80px;
+    max-width: 400px;
+    background-color: map.get($accent, 500);
+    text-decoration: none;
+    padding: .2rem;
+    border-radius: 100px;
+
+    input {
+        background-color: transparent;
+        width: 100%;
+        outline: none;
+        border: none;
+    }
+
+    mat-icon {
+        color: map.get($gray1, 500);
+    }
+}

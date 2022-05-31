@@ -1,0 +1,25 @@
+@use 'sass:map';
+@import 'theme';
+
+p {
+    background-color: red;
+    color: map.get($info, 100);
+}
+
+div {
+    width: 100px;
+    height: 100px;
+}
+
+main {
+    padding: 2rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    router-outlet {
+        width: 100%;
+    }
+}
