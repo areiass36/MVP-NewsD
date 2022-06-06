@@ -1,25 +1,19 @@
 @use 'sass:map';
 @import 'theme';
 
-p {
-    background-color: red;
-    color: map.get($info, 100);
-}
-
-div {
-    width: 100px;
-    height: 100px;
+:root {
+    width: 100vw;
+    height: 100vh;
 }
 
 main {
-    padding: 2rem 0;
+    background-color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    router-outlet {
-        width: 100%;
-    }
 }

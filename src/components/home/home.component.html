@@ -1,6 +1,6 @@
 <article>
-    <nd-card (click)="openCard('1')"></nd-card>
-    <nd-card (click)="openCard('1')"></nd-card>
-    <nd-card (click)="openCard('1')"></nd-card>
-    <nd-card (click)="openCard('1')"></nd-card>
+    <nd-card *ngFor="let n of news" (click)="openCard(n.id)" [news]="n"></nd-card>
 </article>
+<button id="add-news" mat-fab color="accent" (click)="openDialog()">
+    <mat-icon>add</mat-icon>
+</button>

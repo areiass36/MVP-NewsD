@@ -1,29 +1,55 @@
+@use 'sass:map';
+@import 'theme';
+
 article {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding-top: 1rem;
+
+    header {
+        border-bottom: 2px solid map.get($gray1, 200);
+        width: 70%;
+        margin-bottom: 1.8rem;
+
+        h1 {
+            line-height: 3.5rem;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 500;
+        }
+
+    }
+
+
 }
 
 .content {
     width: 70%;
-    padding: 16px;
+    padding: 0;
+    font-size: 1rem !important;
+    font-family: "Roboto" !important;
+    font: 400 1rem Roboto, "Helvetica Neue", sans-serif !important;
 }
 
 .image {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 70%;
     max-height: 30rem;
 
     img {
+        width: 100%;
         object-fit: cover;
         max-height: 30rem;
     }
 }
 
 @media only screen and (max-width:750px) {
-    .content {
+
+    .content,
+    .image {
         width: 90%;
     }
 }

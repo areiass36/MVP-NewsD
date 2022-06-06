@@ -1,9 +1,11 @@
 <header>
-    NewsD
+    <span routerLink="/">NewsD</span>
     <nav>
-        <div class="search">
-            <input type="text">
-            <mat-icon aria-hidden="false">search</mat-icon>
-        </div>
+        <form class="search" (submit)="search()">
+            <input type="text" placeholder="Pesquisar" #input>
+            <button (click)="search()">
+                <mat-icon aria-hidden="false">search</mat-icon>
+            </button>
+        </form>
     </nav>
 </header>

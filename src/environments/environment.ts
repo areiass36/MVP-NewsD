@@ -1,3 +1,4 @@
 export const environment = {
-  production: false
+  production: false,
+  NewsDApi: "https://localhost:7108/"
 };

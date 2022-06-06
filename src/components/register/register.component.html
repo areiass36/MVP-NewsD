@@ -1,0 +1,42 @@
+<section>
+    <mat-card>
+        <mat-card-title>Cadastrar</mat-card-title>
+        <mat-card-subtitle>Crie agora mesmo uma conta NewsD</mat-card-subtitle>
+        <mat-card-content>
+            <form [formGroup]="registerForm">
+                <mat-form-field appearance="fill">
+                    <mat-label>Nome</mat-label>
+                    <input matInput formControlName="name">
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input matInput formControlName="email">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Função</mat-label>
+                    <mat-select formControlName="role">
+                        <mat-option [value]="1">Leitor</mat-option>
+                        <mat-option [value]="2">Administrador</mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Senha</mat-label>
+                    <input matInput type="password" formControlName="password">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Repita a senha</mat-label>
+                    <input matInput type="password" formControlName="passwordRepeat">
+                </mat-form-field>
+
+                <p>{{registerForm.errors}}</p>
+            </form>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button color="accent" [disabled]="registerForm.invalid" (click)="register()">Cadastrar</button>
+        </mat-card-actions>
+    </mat-card>
+    <p>Já possui uma conta? <span routerLink="/login">Entre</span> agora mesmo e contribua para a nossa comunidade!</p>
+</section>

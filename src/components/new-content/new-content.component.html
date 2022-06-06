@@ -1,0 +1,25 @@
+<article>
+    <h1>Publicar novo conteúdo</h1>
+    <form [formGroup]="newsForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Título</mat-label>
+            <input matInput formControlName="title">
+        </mat-form-field>
+        <button mat-raised-button color="accent" (click)="uploadFile()" class="cover">
+            <div>
+                Capa
+                <mat-icon>image</mat-icon>
+            </div>
+        </button>
+        <p>{{fileName}}</p>
+        <img #img src="">
+        <ejs-richtexteditor id='editor' [toolbarSettings]="tools" [fontFamily]="fontFamily" formControlName="content">
+            <ng-template #valueTemplate>
+                <p></p>
+            </ng-template>
+        </ejs-richtexteditor>
+        <button mat-button color="accent" (click)="uploadNews()" class="cover" [disabled]="newsForm.invalid">
+            Publicar
+        </button>
+    </form>
+</article>

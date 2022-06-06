@@ -1,71 +1,10 @@
 <article>
-    <h1>TITLE</h1>
-    <div class="content">
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores dolorum minus vel ipsam id. Soluta
-            veritatis id facere consequuntur fuga, beatae delectus commodi dignissimos suscipit excepturi labore, porro
-            laboriosam veniam!
-            Velit nobis voluptates deserunt optio possimus dignissimos odio dolores omnis dolorem aliquam magni maiores
-            reiciendis perspiciatis libero qui accusantium, soluta molestiae asperiores et esse aut dolor facilis
-            eligendi? Veritatis, fuga.
-            Numquam deserunt dicta in tempora nemo nobis quam officia possimus eos molestias, praesentium, officiis
-            blanditiis reprehenderit odio exercitationem voluptas ab culpa? Ullam ipsa vero, fugiat ratione eius
-            repudiandae ea dolore.
-            Ratione quasi modi soluta facere aliquid vero voluptate suscipit, assumenda consequatur? Dolor nemo eaque,
-            unde repudiandae quos facere sequi? Nobis veritatis ad inventore laborum quis sequi rem, itaque asperiores
-            debitis!
-            Nostrum sed ipsam, laborum numquam, obcaecati, vitae dolores doloribus quam necessitatibus rem facere
-            architecto beatae reprehenderit molestiae quod nemo aspernatur dolore ratione ullam. Fugiat atque cupiditate
-            cum enim a nihil.
-            Consequuntur reprehenderit similique tenetur quia dolorem, deleniti atque beatae provident tempora, vero
-            itaque sunt minus iste ea facere eveniet. In rerum iure voluptatum ipsa facere quae laboriosam debitis vitae
-            sint.
-            Numquam explicabo aut earum nemo, aspernatur vitae voluptas? Molestias, dolorem. Animi et, recusandae nihil
-            dolores esse obcaecati aliquam veritatis blanditiis praesentium natus rem, possimus quaerat qui cum
-            necessitatibus numquam? Corrupti?
-            Debitis neque nisi amet voluptatum laboriosam assumenda, perferendis, quae eveniet doloremque praesentium,
-            id illo ipsum unde autem iusto eligendi magni repellat fuga inventore. Illum facilis ducimus laboriosam
-            inventore, quae reprehenderit.
-            Nam sapiente, dolor numquam aliquam tenetur tempore quam officiis perferendis eveniet atque, iste odit
-            veritatis? Eveniet recusandae, placeat animi modi unde molestiae eos aut omnis! Sint vel ea explicabo dolor?
-            Pariatur doloremque ipsam architecto harum accusantium! Fugit harum tempore, qui odio consectetur vero
-            delectus amet minima laborum. Esse vel incidunt dolorum consequatur corrupti, ducimus tempore sapiente
-            distinctio magnam nihil quia.
-        </p>
-
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores dolorum minus vel ipsam id. Soluta
-            veritatis id facere consequuntur fuga, beatae delectus commodi dignissimos suscipit excepturi labore, porro
-            laboriosam veniam!
-            Velit nobis voluptates deserunt optio possimus dignissimos odio dolores omnis dolorem aliquam magni maiores
-            reiciendis perspiciatis libero qui accusantium, soluta molestiae asperiores et esse aut dolor facilis
-            eligendi? Veritatis, fuga.
-            Numquam deserunt dicta in tempora nemo nobis quam officia possimus eos molestias, praesentium, officiis
-            blanditiis reprehenderit odio exercitationem voluptas ab culpa? Ullam ipsa vero, fugiat ratione eius
-            repudiandae ea dolore.
-            Ratione quasi modi soluta facere aliquid vero voluptate suscipit, assumenda consequatur? Dolor nemo eaque,
-            unde repudiandae quos facere sequi? Nobis veritatis ad inventore laborum quis sequi rem, itaque asperiores
-            debitis!
-            Nostrum sed ipsam, laborum numquam, obcaecati, vitae dolores doloribus quam necessitatibus rem facere
-            architecto beatae reprehenderit molestiae quod nemo aspernatur dolore ratione ullam. Fugiat atque cupiditate
-            cum enim a nihil.
-            Consequuntur reprehenderit similique tenetur quia dolorem, deleniti atque beatae provident tempora, vero
-            itaque sunt minus iste ea facere eveniet. In rerum iure voluptatum ipsa facere quae laboriosam debitis vitae
-            sint.
-            Numquam explicabo aut earum nemo, aspernatur vitae voluptas? Molestias, dolorem. Animi et, recusandae nihil
-            dolores esse obcaecati aliquam veritatis blanditiis praesentium natus rem, possimus quaerat qui cum
-            necessitatibus numquam? Corrupti?
-            Debitis neque nisi amet voluptatum laboriosam assumenda, perferendis, quae eveniet doloremque praesentium,
-            id illo ipsum unde autem iusto eligendi magni repellat fuga inventore. Illum facilis ducimus laboriosam
-            inventore, quae reprehenderit.
-            Nam sapiente, dolor numquam aliquam tenetur tempore quam officiis perferendis eveniet atque, iste odit
-            veritatis? Eveniet recusandae, placeat animi modi unde molestiae eos aut omnis! Sint vel ea explicabo dolor?
-            Pariatur doloremque ipsam architecto harum accusantium! Fugit harum tempore, qui odio consectetur vero
-            delectus amet minima laborum. Esse vel incidunt dolorum consequatur corrupti, ducimus tempore sapiente
-            distinctio magnam nihil quia.
-        </p>
+    <header>
+        <h1>{{news.title}}</h1>
+    </header>
+    <div class="content" [innerHTML]="news.content">
     </div>
     <div class="image">
-        <img src="https://picsum.photos/800/900" alt="" srcset="">
+        <img [src]="news.imageUrl" alt="" srcset="">
     </div>
 </article>
